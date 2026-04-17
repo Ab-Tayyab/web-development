@@ -10,7 +10,6 @@ body{
 .container{
     background-color: rgb(255, 252, 246);
     width: 600px;
-    height: 400px;
     margin: auto;
     border-radius:20px;
     margin-top: 100px;
@@ -20,9 +19,8 @@ body{
 }
 /* left part  */
 .container-child1{
-    background-color: rgb(71, 71, 255);
+    background-color: rgb(107, 107, 255);
     width: 300px;
-    height: 100%;
     border-radius:20px;
     text-align: center;
     color: white;
@@ -35,7 +33,7 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: rgb(61, 61, 254);
+    background-color: rgb(118, 118, 250);
     margin-left: 55px;
     margin-top: 30px;
     box-shadow: 0 0 10 white;
@@ -107,5 +105,20 @@ body{
     color: rgb(228, 225, 225);
     border-radius: 30px;
     margin-top: 20px;
+}
+.container-child2 button:hover{
+    cursor: pointer;
+    background-color: rgb(46, 46, 46);
+    color: rgb(202, 200, 200);
+    transition: all 0.5s ease;
+}
 
+@media (max-width:650px) {
+    .container{
+        flex-direction: column;
+        width: 300px;
+    }
+    .container-child1,.container-child2{
+        width: 100%;
+    }
 }
