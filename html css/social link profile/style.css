@@ -18,23 +18,24 @@ body{
     border-radius: 5px;
 }
 .profile-container>img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    margin: 20px 0px;
 }
 h1{
-    color: white;
+    color: hsl(0, 0%, 100%);
     font-size: 26px;
     padding-bottom: 10px;
 }
 h2{
     font-size: 20px;
-    color: yellow;
+    color:  hsl(75, 94%, 57%);
     padding-bottom: 10px;
 }
 h3{
     font-size: 20px;
-    color: rgb(101, 101, 101);
+    color: #B6B6B6;
     padding-bottom: 10px;
 }
 .link-container{
@@ -45,8 +46,8 @@ h3{
     text-decoration: none;
     width: 100%;
     height: 50px;
-    background-color: rgb(101, 101, 101);
-    color: white;
+    background-color: hsl(0, 0%, 20%);
+    color: #FCFCFC;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
@@ -56,7 +57,8 @@ h3{
 }
 .link-container>a>button:hover{
     cursor: pointer;
-    background-color: rgb(83, 82, 82);
+    background-color:  hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
     transition: 0.5s ease all;
 }
 @media (max-width:450px) {

@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Preview Card</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./icon/favicon-32x32.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="container">
       <div class="left-card">
-        <img src="./product.jpg" alt="Pproduct image" />
+        <picture>
+          <!-- Mobile image: shown for screens 768px and smaller -->
+          <source srcset="./icon/image-product-mobile.jpg" media="(max-width: 768px)" />
+          <!-- Desktop image: default for larger screens -->
+          <img src="./icon/image-product-desktop.jpg" alt="Description of image" />
+        </picture>
       </div>
       <div class="right-card">
         <h2>PERFUME</h2>
@@ -22,7 +36,10 @@
           <span class="p1">$149.99</span>
           <span class="p2">$169.99</span>
         </div>
-        <button>Add To Cart</button>
+        <button>
+          <i class="fa fa-shopping-cart"></i>
+          Add To Cart
+        </button>
       </div>
     </div>
   </body>

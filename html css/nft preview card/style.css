@@ -21,22 +21,28 @@ body{
 }
 h1{
     color: white;
-    font-size: 30px;
-    padding: 10px 0px;
+    font-size: 25px;
+    padding: 20px 0px;
 }
 p{
-    color: #99AFCC;
+    color: hsl(215, 51%, 70%);
+    padding-bottom: 20px;
 }
 .price{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 20px 0px;
+}
+.price-sp,.price-rem{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .price-sp{
-    color: aqua;
+    color: hsl(178, 100%, 50%);
 }
 .price-rem{
-    color: #99AFCC;
+    color: hsl(215, 51%, 70%);
 }
 .profile{
     display: flex;
