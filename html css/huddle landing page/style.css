@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+
+  background:
+    url("./icon/bg-desktop.svg") no-repeat,
+    hsl(257, 40%, 49%);
+  background-size: cover;
+  color: white;
+  padding: 20px 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+.child1 {
+  margin-bottom: 50px;
+}
+.child1 img {
+  width: 200px;
+}
+.child2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.child2-c1 img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.child2-c2 {
+  max-width: 500px;
+}
+.child2 h1 {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.child2 p {
+  color: rgb(233, 220, 220);
+  line-height: 1.25rem;
+}
+p,
+button {
+  margin: 20px 0px;
+  letter-spacing: 1px;
+}
+.child2 button {
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 15px;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  transition: ease 0.5s all;
+}
+.child2 button:hover {
+  cursor: pointer;
+  /* background-color: rgb(234, 224, 224); */
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.child3 {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  margin-top: 40px;
+}
+.child3 i {
+  font-size: 40px;
+  color: white;
+}
+
+@media (max-width: 920px) {
+  .child2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container {
+    width: 80%;
+    padding: 0px 40px;
+    margin: auto;
+  }
+}
+@media (max-width: 550px) {
+    body {
+    background:
+      url("./icon/bg-mobile.svg") no-repeat,
+      hsl(257, 40%, 49%);
+      background-size: cover;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    .child3{
+    width: 100%;
+    text-align: center;
+    }
+
+  .child2-c2 {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  button {
+    width: 100%;
+  }
+}
