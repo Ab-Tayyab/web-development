@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+section{
+    padding: 20px;
+}
+ /* history */
+.history{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.history>img{
+    width: 100px;
+    margin: auto;
+    margin: 40px 0px;
+}
+.history>h1{
+    font-size: 30px;
+    color: hsl(210, 10%, 33%);
+    padding: 10px 0px;
+}
+
+h2,h3,h4{
+    color: hsl(210, 10%, 33%);
+    font-size: 25px;
+    padding: 10px 0px;
+}
+h3,h4{
+    font-size: 14px !important;
+    padding: 0 !important;
+}
+p{
+    font-size: 14px;
+    color: hsl(201, 11%, 66%);
+    padding: 10px 0px;
+}
+.history>div{
+    margin: 20px 0px;
+}
+button{
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    margin: 20px 0px 0px 0px;
+}
+.btn1{
+    background-color: hsl(171, 66%, 44%);
+}
+.btn2{
+    background-color:hsl(233, 100%, 69%);
+}
+
+/* track  */
+.track{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+/* features  */
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.features>img{
+    width: 50%;
+}
+
+/* access  */
+
+.access{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+}
+.access>img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* workflow  */
+
+.workflow{
+    text-align: center;
+}
+.workflow>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+    gap: 40px;
+}
+
+.workflow>div>div{
+    width: 300px;
+}
+
+/* apps  */
+.apps{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+/* footer  */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: hsl(192, 19%, 95%);
+    padding: 20px;
+}
+
+footer>img{
+    width: 50px;
+}
+
+footer>div{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+
+@media (max-width:915px) {
+    .features{
+        flex-direction: column;
+        width: 100%;
+    }
+    .workflow-feature{}
+}
+
+@media (max-width:768px) {
+    .history,.track,.access,.apps{
+        width: 100%;
+    }
+    button{
+        width: 40%;
+        padding: 15px 0px;
+        font-size: 20px;
+    }
+    .features>img{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .links{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer>div{
+        margin: 20px 0px;
+    }
+}
+@media (max-width:500px) {
+    button{
+        flex-direction: column;
+        width: 100%;
+         padding: 20px 0px;
+        font-weight: bold;
+    }
+}
