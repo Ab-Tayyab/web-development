@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Count</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Text Analyzer</h2>
+
+      <textarea id="input" placeholder="Start typing..."></textarea>
+
+      <div class="stats">
+        <div class="card">
+          <p>Words</p>
+          <span id="total_words">0</span>
+        </div>
+
+        <div class="card">
+          <p>Characters</p>
+          <span id="total_ch">0</span>
+        </div>
+
+        <div class="card">
+          <p>Remaining</p>
+          <span id="remain_ch">140</span>
+        </div>
+      </div>
+
+      <div id="container"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
