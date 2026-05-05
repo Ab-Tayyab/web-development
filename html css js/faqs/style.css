@@ -8,10 +8,34 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color:hsl(275, 100%, 97%) ;
+    position: relative;
     min-height: 100vh;
 }
+.bg-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    height: auto;
+}
 .container{
-    width: 600px;
+    position: relative;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 2;
+    margin: 10px;
+}
+
+.heading{
+    display: flex;
+    margin: 20px 0px;
+    gap: 30px;
+    color: hsl(292, 42%, 14%);
 }
 
 .faq-item{
@@ -31,20 +55,24 @@ body{
     padding: 10px 0px;
 }
 .icon{
-    /* padding: 2px 5px; */
-    /* background-color: hsl(293, 66%, 54%); */
-    /* border-radius: 50%; */
-    color: hsl(293, 66%, 54%);
     transition: transform 0.3s ease;
-    font-size: 30px;
-    font-weight: bold;
+
 }
 .icon:hover{
     cursor: pointer;
-    transform: rotate(90deg);
+    transform: rotate(45deg);
 }
-.faq-item.active .icon{
-    content: "-";
+.plus{
+    display: block;
+}
+.minus{
+    display: none;
+}
+.faq-item.active .minus{
+display: block;
+}
+.faq-item.active .plus{
+    display: none;
 }
 .faq-ans {
     color: hsl(292, 16%, 49%);
