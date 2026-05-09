@@ -3,29 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SignUp form</title>
+    <title>SignUp Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div>
-      <form action="" id="userForm">
+      <form id="userForm">
+        <h2>Create Account</h2>
         <div>
           <input type="text" id="fName" placeholder="Enter First Name" />
           <input type="text" id="lName" placeholder="Enter Last Name" />
           <p id="nError"></p>
         </div>
+
         <input type="text" id="email" placeholder="Enter Email Address" />
         <p id="eError"></p>
+
         <div>
-          <input type="text" id="fPassword" placeholder="Enter Password" />
-          <input
-            type="text"
-            id="lPassword"
-            placeholder="Enter Password again"
-          />
+          <h3>
+            Password must contain uppercase, lowercase, number and special
+            character
+          </h3>
+
+          <div class="password-box">
+            <input
+              type="password"
+              id="fPassword"
+              class="password"
+              placeholder="Enter Password"
+            />
+          </div>
+
+          <div class="password-box">
+            <input
+              type="password"
+              id="lPassword"
+              class="password"
+              placeholder="Confirm Password"
+            />
+          </div>
+
+          <label>
+            <input type="checkbox" id="hide-unhide" />
+            Show Password
+          </label>
+
           <p id="pError"></p>
         </div>
-        <button type="submit" id="btn">Create Acount</button>
+
+        <button type="submit">Create Account</button>
       </form>
     </div>
 
