@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./icon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img class="icon" src="./icon/icon-star.svg" alt="Icon" />
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <form id="ratingForm">
+        <div class="rating">
+          <h2 data-rating="1">1</h2>
+          <h2 data-rating="2">2</h2>
+          <h2 data-rating="3">3</h2>
+          <h2 data-rating="4">4</h2>
+          <h2 data-rating="5">5</h2>
+        </div>
+
+        <input type="hidden" id="selectedRating" name="rating" />
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
